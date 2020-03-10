@@ -1,0 +1,30 @@
+.links > a {
+    padding:25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.col-8{
+    text-align: center;
+    margin-top: 200px;
+}
+.btn{
+    width:300px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 20px 1px teal;
+}
+body{
+    width: 100%;
+    background-image:
+            linear-gradient(to right, rgba(58, 52, 52, 0.52), rgba(83, 78, 78, 0.73)),
+            url(https://cdn.pixabay.com/photo/2017/02/24/02/37/classroom-2093744_960_720.jpg);
+            background-size: cover;
+            background-position: center;
+}
+h1{
+    color:#fff;
+}
+
