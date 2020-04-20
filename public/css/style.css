@@ -11,20 +11,53 @@
     text-align: center;
     margin-top: 200px;
 }
-.btn{
-    width:300px;
-    margin-top: 10px;
-    box-shadow: 1px 1px 20px 1px teal;
-}
-body{
-    width: 100%;
-    background-image:
-            linear-gradient(to right, rgba(58, 52, 52, 0.52), rgba(83, 78, 78, 0.73)),
-            url(https://cdn.pixabay.com/photo/2017/02/24/02/37/classroom-2093744_960_720.jpg);
-            background-size: cover;
-            background-position: center;
-}
-h1{
-    color:#fff;
-}
-
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-top: -79px;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
